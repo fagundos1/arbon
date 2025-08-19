@@ -12,7 +12,7 @@ html {
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #1e293b;
     overflow-x: hidden;
 }
 
@@ -57,7 +57,7 @@ body {
 .logo-text {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #6366f1;
+    color: #0891b2;
 }
 
 .nav-menu {
@@ -74,7 +74,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #6366f1;
+    color: #0891b2;
 }
 
 .hamburger {
@@ -94,7 +94,7 @@ body {
 /* Hero Section */
 .hero {
     padding: 120px 0 80px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #0891b2 0%, #065f46 100%);
     color: white;
     min-height: 100vh;
     display: flex;
@@ -119,7 +119,7 @@ body {
 }
 
 .highlight {
-    color: #fbbf24;
+    color: #22d3ee;
 }
 
 .hero-description {
@@ -150,12 +150,12 @@ body {
 }
 
 .btn-primary {
-    background: #fbbf24;
-    color: #1f2937;
+    background: #10b981;
+    color: white;
 }
 
 .btn-primary:hover {
-    background: #f59e0b;
+    background: #059669;
     transform: translateY(-2px);
 }
 
@@ -166,8 +166,9 @@ body {
 }
 
 .btn-secondary:hover {
-    background: white;
-    color: #1f2937;
+    background: #22d3ee;
+    color: #1e293b;
+    border-color: #22d3ee;
     transform: translateY(-2px);
 }
 
@@ -190,13 +191,13 @@ body {
     font-weight: 700;
     text-align: center;
     margin-bottom: 3rem;
-    color: #1f2937;
+    color: #1e293b;
 }
 
 /* Features Section */
 .features {
     padding: 80px 0;
-    background: #f8fafc;
+    background: linear-gradient(135deg, #f0f9ff 0%, #ecfdf5 100%);
 }
 
 .features-grid {
@@ -222,7 +223,7 @@ body {
 .feature-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    background: linear-gradient(135deg, #0891b2, #10b981);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -239,7 +240,7 @@ body {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #1f2937;
+    color: #1e293b;
 }
 
 .feature-card p {
@@ -282,7 +283,7 @@ body {
     display: block;
     font-size: 2.5rem;
     font-weight: 700;
-    color: #6366f1;
+    color: #0891b2;
 }
 
 .stat-label {
@@ -307,7 +308,7 @@ body {
 /* Download Section */
 .download {
     padding: 80px 0;
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    background: linear-gradient(135deg, #cffafe 0%, #d1fae5 100%);
     text-align: center;
 }
 
@@ -385,7 +386,7 @@ body {
 
 .contact-item i {
     width: 20px;
-    color: #6366f1;
+    color: #0891b2;
 }
 
 .social-links {
@@ -397,7 +398,7 @@ body {
 .social-link {
     width: 50px;
     height: 50px;
-    background: #6366f1;
+    background: #0891b2;
     color: white;
     border-radius: 50%;
     display: flex;
@@ -408,12 +409,12 @@ body {
 }
 
 .social-link:hover {
-    background: #4f46e5;
+    background: #10b981;
     transform: translateY(-3px);
 }
 
 .contact-form {
-    background: #f8fafc;
+    background: #f0fdfa;
     padding: 2rem;
     border-radius: 20px;
 }
@@ -436,7 +437,7 @@ body {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #6366f1;
+    border-color: #0891b2;
 }
 
 .form-group textarea {
@@ -462,7 +463,7 @@ body {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
-    color: #fbbf24;
+    color: #22d3ee;
 }
 
 .footer-section ul {
@@ -480,7 +481,7 @@ body {
 }
 
 .footer-section ul li a:hover {
-    color: #fbbf24;
+    color: #22d3ee;
 }
 
 .footer-section p {

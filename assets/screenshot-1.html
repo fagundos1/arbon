@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Screenshot 1</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0891b2, #065f46);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: 'Inter', sans-serif;
+            color: white;
+        }
+        .phone-frame {
+            width: 250px;
+            height: 500px;
+            background: #1e293b;
+            border-radius: 30px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .status-bar {
+            height: 20px;
+            background: linear-gradient(90deg, #0891b2, #22d3ee);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .screen-content {
+            flex: 1;
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            color: #1e293b;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .app-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #10b981, #22d3ee);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+        .app-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #0891b2;
+        }
+        .app-subtitle {
+            font-size: 14px;
+            color: #64748b;
+            margin-bottom: 20px;
+        }
+        .feature-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+        }
+        .feature-item {
+            background: #f0f9ff;
+            padding: 10px;
+            border-radius: 8px;
+            border-left: 4px solid #0891b2;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="phone-frame">
+        <div class="status-bar">TherapyLogy</div>
+        <div class="screen-content">
+            <div class="app-icon">🧠</div>
+            <div class="app-title">Welcome</div>
+            <div class="app-subtitle">Your mental health journey starts here</div>
+            <div class="feature-list">
+                <div class="feature-item">🎯 Professional Therapy</div>
+                <div class="feature-item">🧘 Mindfulness Tools</div>
+                <div class="feature-item">📊 Progress Tracking</div>
+                <div class="feature-item">👥 Community Support</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

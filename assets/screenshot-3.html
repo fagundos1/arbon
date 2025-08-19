@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Screenshot 3</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #22d3ee, #0891b2);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: 'Inter', sans-serif;
+            color: white;
+        }
+        .phone-frame {
+            width: 250px;
+            height: 500px;
+            background: #1e293b;
+            border-radius: 30px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .status-bar {
+            height: 20px;
+            background: linear-gradient(90deg, #22d3ee, #10b981);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .screen-content {
+            flex: 1;
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            color: #1e293b;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f0f9ff;
+        }
+        .header h2 {
+            margin: 0;
+            color: #0891b2;
+            font-size: 18px;
+        }
+        .session-card {
+            background: linear-gradient(135deg, #f0f9ff, #ecfdf5);
+            border-radius: 15px;
+            padding: 15px;
+            border-left: 4px solid #0891b2;
+        }
+        .session-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .therapist-name {
+            font-weight: 600;
+            color: #065f46;
+            font-size: 14px;
+        }
+        .session-time {
+            background: #10b981;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 10px;
+        }
+        .session-type {
+            color: #6b7280;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+        .join-button {
+            background: #0891b2;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            width: 100%;
+        }
+        .upcoming {
+            font-size: 12px;
+            color: #6b7280;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="phone-frame">
+        <div class="status-bar">Therapy Sessions</div>
+        <div class="screen-content">
+            <div class="header">
+                <h2>Your Sessions</h2>
+            </div>
+            <div class="session-card">
+                <div class="session-info">
+                    <div class="therapist-name">Dr. Sarah Johnson</div>
+                    <div class="session-time">2:00 PM</div>
+                </div>
+                <div class="session-type">Cognitive Behavioral Therapy</div>
+                <button class="join-button">Join Session</button>
+            </div>
+            <div class="session-card">
+                <div class="session-info">
+                    <div class="therapist-name">Dr. Michael Chen</div>
+                    <div class="session-time">4:30 PM</div>
+                </div>
+                <div class="session-type">Mindfulness Session</div>
+                <button class="join-button">Scheduled</button>
+            </div>
+            <div class="upcoming">
+                <p>📅 Next session in 2 hours</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
