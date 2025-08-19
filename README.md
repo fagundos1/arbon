@@ -12,6 +12,12 @@ A modern, responsive website for TherapyLogy, a comprehensive mental health mobi
 - **Contact Form**: Functional contact form with validation and notifications
 - **SEO Ready**: Proper meta tags and semantic HTML structure
 
+## 🌐 Live Website
+
+**Official Domain**: [https://therapylogy.com](https://therapylogy.com)
+
+The TherapyLogy website is live and accessible at the official domain therapylogy.com.
+
 ## 🚀 Quick Start
 
 ### Prerequisites
