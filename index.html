@@ -15,7 +15,7 @@
     <meta name="twitter:image" content="https://therapylogy.com/assets/twitter-image.png">
     <link rel="canonical" href="https://therapylogy.com">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -23,23 +23,32 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="assets/logo.svg" alt="TherapyLogy" class="logo-img">
+                <div class="logo-icon">🧠</div>
                 <span class="logo-text">TherapyLogy</span>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
+                    <a href="#hero" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
                     <a href="#features" class="nav-link">Features</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
+                    <a href="#how-it-works" class="nav-link">How It Works</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#download" class="nav-link">Download</a>
+                    <a href="#testimonials" class="nav-link">Success Stories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#pricing" class="nav-link">Pricing</a>
                 </li>
                 <li class="nav-item">
                     <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
+            <div class="nav-actions">
+                <a href="#download" class="btn btn-outline">Get Started</a>
+            </div>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -49,40 +58,65 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="hero" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
         <div class="hero-container">
             <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Trusted by 50,000+ users worldwide</span>
+                </div>
                 <h1 class="hero-title">
-                    Your Mental Health <span class="highlight">Companion</span>
+                    Transform Your <span class="gradient-text">Mental Health</span> Journey
                 </h1>
                 <p class="hero-description">
-                    TherapyLogy is a comprehensive mental health app designed to support your emotional well-being journey. 
-                    Access professional therapy, self-care tools, and community support anytime, anywhere.
+                    Experience the future of mental wellness with AI-powered therapy, personalized tools, and 24/7 support. 
+                    Join thousands who have found their path to emotional well-being.
                 </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">Success Rate</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Support</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">AI</span>
+                        <span class="stat-label">Powered</span>
+                    </div>
+                </div>
                 <div class="hero-buttons">
                     <a href="#download" class="btn btn-primary">
-                        <i class="fab fa-apple"></i>
-                        Download for iOS
+                        <i class="fas fa-rocket"></i>
+                        Start Free Trial
                     </a>
-                    <a href="#download" class="btn btn-secondary">
-                        <i class="fab fa-google-play"></i>
-                        Download for Android
+                    <a href="#demo" class="btn btn-secondary">
+                        <i class="fas fa-play"></i>
+                        Watch Demo
                     </a>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="app-preview-placeholder">
-                    <div class="phone-frame">
-                        <div class="phone-screen">
-                            <div class="app-icon">🧠</div>
-                            <h3>TherapyLogy</h3>
-                            <p>Your mental health companion</p>
-                            <div class="app-features">
-                                <span>🎯 Therapy</span>
-                                <span>🧘 Tools</span>
-                                <span>👥 Support</span>
-                            </div>
-                        </div>
+            <div class="hero-visual">
+                <div class="app-showcase">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-heart"></i>
+                        <span>Mood Tracking</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-brain"></i>
+                        <span>AI Therapy</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-users"></i>
+                        <span>Community</span>
                     </div>
                 </div>
             </div>
@@ -92,97 +126,249 @@
     <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
-            <h2 class="section-title">Why Choose TherapyLogy?</h2>
+            <div class="section-header">
+                <h2 class="section-title">Why Choose TherapyLogy?</h2>
+                <p class="section-subtitle">Discover the unique features that make us the leading mental health platform</p>
+            </div>
             <div class="features-grid">
+                <div class="feature-card feature-card-large">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI-Powered Therapy</h3>
+                    <p>Advanced artificial intelligence that adapts to your needs, providing personalized therapy sessions and insights.</p>
+                    <ul class="feature-list">
+                        <li>Personalized treatment plans</li>
+                        <li>Real-time mood analysis</li>
+                        <li>Predictive mental health insights</li>
+                    </ul>
+                </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-user-md"></i>
                     </div>
-                    <h3>Professional Therapy</h3>
-                    <p>Connect with licensed therapists and mental health professionals through secure video sessions and messaging.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>Mental Health Tools</h3>
-                    <p>Access meditation guides, breathing exercises, mood tracking, and cognitive behavioral therapy techniques.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Community Support</h3>
-                    <p>Join supportive communities and connect with others who understand your mental health journey.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Privacy & Security</h3>
-                    <p>Your data is protected with bank-level encryption and HIPAA compliance standards.</p>
+                    <h3>Expert Therapists</h3>
+                    <p>Connect with licensed professionals through secure video sessions, chat, and voice calls.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>Progress Tracking</h3>
-                    <p>Monitor your mental health progress with detailed analytics and personalized insights.</p>
+                    <h3>Progress Analytics</h3>
+                    <p>Track your mental health journey with detailed analytics and personalized reports.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Privacy First</h3>
+                    <p>Bank-level encryption and HIPAA compliance ensure your data is completely secure.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-clock"></i>
                     </div>
-                    <h3>24/7 Availability</h3>
-                    <p>Access support whenever you need it, with crisis resources and emergency contacts always available.</p>
+                    <h3>Always Available</h3>
+                    <p>Access support whenever you need it with our 24/7 crisis intervention system.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Cross-Platform</h3>
+                    <p>Seamlessly sync across all your devices - iOS, Android, and web.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2 class="section-title">About TherapyLogy</h2>
-                    <p>
-                        TherapyLogy was born from a simple belief: mental health support should be accessible, 
-                        affordable, and available to everyone. We understand that seeking help can be challenging, 
-                        which is why we've created a platform that removes barriers and makes mental health care 
-                        approachable.
-                    </p>
-                    <p>
-                        Our team of mental health professionals, technologists, and designers work together to 
-                        create an experience that truly supports your well-being. We're committed to evidence-based 
-                        approaches and continuously improving our platform based on user feedback and research.
-                    </p>
-                    <div class="stats">
-                        <div class="stat">
-                            <span class="stat-number">50K+</span>
-                            <span class="stat-label">Active Users</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">200+</span>
-                            <span class="stat-label">Licensed Therapists</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">95%</span>
-                            <span class="stat-label">User Satisfaction</span>
+            <div class="section-header">
+                <h2 class="section-title">How TherapyLogy Works</h2>
+                <p class="section-subtitle">Your journey to mental wellness in three simple steps</p>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Complete Assessment</h3>
+                        <p>Start with our comprehensive mental health assessment to understand your unique needs and goals.</p>
+                        <div class="step-features">
+                            <span>5-minute questionnaire</span>
+                            <span>AI-powered analysis</span>
+                            <span>Personalized insights</span>
                         </div>
                     </div>
                 </div>
-                <div class="about-image">
-                    <div class="about-img-placeholder">
-                        <div class="team-illustration">
-                            <div class="team-member">👨‍⚕️</div>
-                            <div class="team-member">👩‍💻</div>
-                            <div class="team-member">👨‍🎨</div>
-                            <div class="team-connections"></div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Get Matched</h3>
+                        <p>Our AI algorithm matches you with the perfect therapist and creates a customized treatment plan.</p>
+                        <div class="step-features">
+                            <span>Smart matching</span>
+                            <span>Treatment planning</span>
+                            <span>Goal setting</span>
                         </div>
-                        <h4>Our Team</h4>
-                        <p>Mental health professionals, technologists, and designers working together</p>
                     </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Begin Healing</h3>
+                        <p>Start your therapy sessions, track progress, and access tools designed for your specific needs.</p>
+                        <div class="step-features">
+                            <span>Regular sessions</span>
+                            <span>Progress tracking</span>
+                            <span>Continuous support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Success Stories</h2>
+                <p class="section-subtitle">Real people, real results with TherapyLogy</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="user-avatar">👩‍🦰</div>
+                        <div class="user-info">
+                            <h4>Sarah Mitchell</h4>
+                            <span>Anxiety & Depression</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p>"TherapyLogy changed my life. The AI insights helped me understand my patterns, and my therapist was incredible. I'm now anxiety-free for the first time in years."</p>
+                    <div class="testimonial-stats">
+                        <span>6 months of therapy</span>
+                        <span>90% improvement</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="user-avatar">👨‍💼</div>
+                        <div class="user-info">
+                            <h4>Michael Chen</h4>
+                            <span>Stress Management</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p>"As a busy executive, I needed flexible therapy. TherapyLogy's 24/7 availability and AI tools helped me manage stress effectively while maintaining my schedule."</p>
+                    <div class="testimonial-stats">
+                        <span>3 months of therapy</span>
+                        <span>85% improvement</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="user-avatar">👩‍🎓</div>
+                        <div class="user-info">
+                            <h4>Emma Rodriguez</h4>
+                            <span>Self-Esteem</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p>"The community support and personalized tools helped me build confidence I never thought possible. TherapyLogy made therapy accessible and enjoyable."</p>
+                    <div class="testimonial-stats">
+                        <span>8 months of therapy</span>
+                        <span>95% improvement</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Choose Your Plan</h2>
+                <p class="section-subtitle">Flexible pricing options for every budget and need</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">0</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>Perfect for trying out TherapyLogy</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Basic mood tracking</li>
+                        <li><i class="fas fa-check"></i> AI insights</li>
+                        <li><i class="fas fa-check"></i> Community access</li>
+                        <li><i class="fas fa-check"></i> Crisis resources</li>
+                    </ul>
+                    <a href="#download" class="btn btn-outline">Get Started Free</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">29</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>Complete mental health support</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Everything in Starter</li>
+                        <li><i class="fas fa-check"></i> 4 therapy sessions/month</li>
+                        <li><i class="fas fa-check"></i> Personalized treatment plans</li>
+                        <li><i class="fas fa-check"></i> Progress analytics</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                    </ul>
+                    <a href="#download" class="btn btn-primary">Start Free Trial</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">59</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>Unlimited therapy and premium features</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Everything in Professional</li>
+                        <li><i class="fas fa-check"></i> Unlimited therapy sessions</li>
+                        <li><i class="fas fa-check"></i> Advanced AI insights</li>
+                        <li><i class="fas fa-check"></i> Family plan options</li>
+                        <li><i class="fas fa-check"></i> 24/7 therapist access</li>
+                    </ul>
+                    <a href="#download" class="btn btn-outline">Start Free Trial</a>
                 </div>
             </div>
         </div>
@@ -191,73 +377,49 @@
     <!-- Download Section -->
     <section id="download" class="download">
         <div class="container">
-            <h2 class="section-title">Download TherapyLogy Today</h2>
-            <p class="download-description">
-                Start your mental health journey with TherapyLogy. Available on iOS and Android devices.
-            </p>
-            <div class="download-buttons">
-                <a href="#" class="download-btn">
-                    <div class="app-store-badge">
-                        <div class="badge-icon">🍎</div>
-                        <div class="badge-text">
-                            <div class="badge-subtitle">Download on the</div>
-                            <div class="badge-title">App Store</div>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="download-btn">
-                    <div class="google-play-badge">
-                        <div class="badge-icon">▶️</div>
-                        <div class="badge-text">
-                            <div class="badge-subtitle">GET IT ON</div>
-                            <div class="badge-title">Google Play</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="app-screenshots">
-                <div class="screenshot screenshot-1">
-                    <div class="phone-mockup">
-                        <div class="phone-header">TherapyLogy</div>
-                        <div class="phone-content">
-                            <div class="app-icon">🧠</div>
-                            <h4>Welcome</h4>
-                            <p>Your mental health journey starts here</p>
-                            <div class="feature-list">
-                                <span>🎯 Professional Therapy</span>
-                                <span>🧘 Mindfulness Tools</span>
-                                <span>📊 Progress Tracking</span>
+            <div class="download-content">
+                <div class="download-text">
+                    <h2>Ready to Start Your Journey?</h2>
+                    <p>Join thousands of users who have transformed their mental health with TherapyLogy. Download now and get your first week free.</p>
+                    <div class="download-buttons">
+                        <a href="#" class="download-btn app-store">
+                            <i class="fab fa-apple"></i>
+                            <div class="btn-text">
+                                <span class="btn-subtitle">Download on the</span>
+                                <span class="btn-title">App Store</span>
                             </div>
-                        </div>
+                        </a>
+                        <a href="#" class="download-btn google-play">
+                            <i class="fab fa-google-play"></i>
+                            <div class="btn-text">
+                                <span class="btn-subtitle">GET IT ON</span>
+                                <span class="btn-title">Google Play</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="download-features">
+                        <span><i class="fas fa-shield-alt"></i> 100% Secure</span>
+                        <span><i class="fas fa-clock"></i> Free Trial</span>
+                        <span><i class="fas fa-sync"></i> Cancel Anytime</span>
                     </div>
                 </div>
-                <div class="screenshot screenshot-2">
-                    <div class="phone-mockup">
-                        <div class="phone-header">Mood Tracker</div>
-                        <div class="phone-content">
-                            <h4>How are you feeling?</h4>
-                            <div class="mood-options">
-                                <span>😢</span><span>😟</span><span class="active">😐</span><span>😊</span><span>😄</span>
+                <div class="download-visual">
+                    <div class="app-preview">
+                        <div class="screen screen-1">
+                            <div class="screen-header">Welcome</div>
+                            <div class="screen-content">
+                                <div class="app-icon">🧠</div>
+                                <h4>Ready to begin?</h4>
+                                <p>Your mental health journey starts here</p>
                             </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill"></div>
-                            </div>
-                            <p>75% improvement this week</p>
                         </div>
-                    </div>
-                </div>
-                <div class="screenshot screenshot-3">
-                    <div class="phone-mockup">
-                        <div class="phone-header">Therapy Sessions</div>
-                        <div class="phone-content">
-                            <h4>Your Sessions</h4>
-                            <div class="session-card">
-                                <div class="session-info">
-                                    <strong>Dr. Sarah Johnson</strong>
-                                    <span class="time">2:00 PM</span>
+                        <div class="screen screen-2">
+                            <div class="screen-header">Mood Check</div>
+                            <div class="screen-content">
+                                <h4>How are you feeling?</h4>
+                                <div class="mood-selector">
+                                    <span>😢</span><span>😟</span><span class="active">😐</span><span>😊</span><span>😄</span>
                                 </div>
-                                <p>Cognitive Behavioral Therapy</p>
-                                <button class="join-btn">Join Session</button>
                             </div>
                         </div>
                     </div>
@@ -269,21 +431,38 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get in Touch</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>hello@therapylogy.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+1 (555) 123-4567</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Armenia, YEREVAN, SHENGAVIT, Tadevosian St, 10 - 58, 0055</span>
+                    <h2>Get in Touch</h2>
+                    <p>Have questions? We're here to help you on your mental health journey.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Email Us</h4>
+                                <span>hello@therapylogy.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Call Us</h4>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Visit Us</h4>
+                                <span>Armenia, YEREVAN, SHENGAVIT<br>Tadevosian St, 10 - 58, 0055</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="social-links">
                         <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
@@ -293,19 +472,31 @@
                     </div>
                 </div>
                 <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <h3>Send us a Message</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select Subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="support">Technical Support</option>
+                            <option value="billing">Billing Question</option>
+                            <option value="partnership">Partnership</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
                 </form>
             </div>
         </div>
@@ -317,18 +508,23 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <img src="assets/logo.svg" alt="TherapyLogy" class="logo-img">
+                        <div class="logo-icon">🧠</div>
                         <span class="logo-text">TherapyLogy</span>
                     </div>
-                    <p>Your mental health companion, making therapy accessible to everyone.</p>
+                    <p>Transforming mental health care through technology, compassion, and innovation.</p>
+                    <div class="footer-badges">
+                        <span class="badge">HIPAA Compliant</span>
+                        <span class="badge">AI Powered</span>
+                        <span class="badge">24/7 Support</span>
+                    </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4>Product</h4>
                     <ul>
                         <li><a href="#features">Features</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
                         <li><a href="#download">Download</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#demo">Demo</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -344,10 +540,20 @@
                     <h4>Company</h4>
                     <p><strong>ARBON LLC</strong></p>
                     <p>Armenia, YEREVAN, SHENGAVIT<br>Tadevosian St, 10 - 58, 0055</p>
+                    <div class="company-stats">
+                        <span>50K+ Users</span>
+                        <span>200+ Therapists</span>
+                        <span>95% Success Rate</span>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 TherapyLogy. All rights reserved. | ARBON LLC</p>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Cookies</a>
+                </div>
             </div>
         </div>
     </footer>
