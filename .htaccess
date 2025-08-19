@@ -9,6 +9,10 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteCond %{HTTP_HOST} ^www\.therapylogy\.com [NC]
 RewriteRule ^(.*)$ https://therapylogy.com/$1 [L,R=301]
 
+# DigitalOcean App Platform specific headers
+Header always set X-Powered-By "DigitalOcean App Platform"
+Header always set Server "DigitalOcean"
+
 # Custom error pages
 ErrorDocument 404 /404.html
 ErrorDocument 500 /500.html

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Check - TherapyLogy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background: #f8fafc;
+        }
+        .status {
+            color: #10b981;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .info {
+            color: #6b7280;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="status">✅ HEALTHY</div>
+    <div class="info">
+        <p>TherapyLogy website is running successfully on DigitalOcean App Platform</p>
+        <p>Domain: therapylogy.com</p>
+        <p>Status: Active</p>
+        <p>Timestamp: <span id="timestamp"></span></p>
+    </div>
+    
+    <script>
+        document.getElementById('timestamp').textContent = new Date().toISOString();
+    </script>
+</body>
+</html>

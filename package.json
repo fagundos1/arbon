@@ -1,0 +1,32 @@
+{
+  "name": "therapylogy",
+  "version": "1.0.0",
+  "description": "TherapyLogy - Your Mental Health Companion Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -s . -l $PORT",
+    "dev": "npx serve -s . -l 8080",
+    "build": "echo 'Static site - no build required'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "mental-health",
+    "therapy",
+    "wellness",
+    "mobile-app",
+    "therapylogy"
+  ],
+  "author": "ARBON LLC",
+  "license": "Proprietary",
+  "dependencies": {
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fagundos1/arbon.git"
+  },
+  "homepage": "https://therapylogy.com"
+}
