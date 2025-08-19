@@ -178,11 +178,66 @@ body {
     align-items: center;
 }
 
-.app-preview {
+.app-preview-placeholder {
     max-width: 100%;
     height: auto;
-    border-radius: 20px;
+}
+
+.phone-frame {
+    width: 300px;
+    height: 400px;
+    background: #1e293b;
+    border-radius: 30px;
+    padding: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.phone-screen {
+    flex: 1;
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #1e293b;
+}
+
+.phone-screen .app-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.phone-screen h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0891b2;
+    margin-bottom: 10px;
+}
+
+.phone-screen p {
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+.app-features {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.app-features span {
+    background: #f0f9ff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border-left: 3px solid #0891b2;
+    font-size: 0.9rem;
+    color: #1e293b;
 }
 
 /* Section Styles */
@@ -298,11 +353,51 @@ body {
     justify-content: center;
 }
 
-.about-img {
+.about-img-placeholder {
     max-width: 100%;
     height: auto;
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    background: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.team-illustration {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.team-member {
+    display: inline-block;
+    font-size: 3rem;
+    margin: 0 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #f0f9ff, #ecfdf5);
+    border-radius: 50%;
+    border: 3px solid #0891b2;
+}
+
+.team-connections {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #0891b2, #10b981);
+    z-index: -1;
+}
+
+.about-img-placeholder h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #0891b2;
+    margin-bottom: 15px;
+}
+
+.about-img-placeholder p {
+    color: #6b7280;
+    line-height: 1.6;
 }
 
 /* Download Section */
@@ -329,13 +424,64 @@ body {
     flex-wrap: wrap;
 }
 
-.download-btn img {
-    height: 60px;
+.download-btn {
+    text-decoration: none;
     transition: transform 0.3s ease;
 }
 
-.download-btn:hover img {
+.download-btn:hover {
     transform: scale(1.05);
+}
+
+.app-store-badge,
+.google-play-badge {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    width: 200px;
+    height: 60px;
+}
+
+.app-store-badge {
+    background: #000;
+    color: white;
+}
+
+.google-play-badge {
+    background: #000;
+    color: white;
+}
+
+.badge-icon {
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0891b2, #22d3ee);
+    border-radius: 8px;
+}
+
+.badge-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.badge-subtitle {
+    font-size: 0.7rem;
+    color: #9ca3af;
+    margin-bottom: 2px;
+}
+
+.badge-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
 }
 
 .app-screenshots {
@@ -349,12 +495,156 @@ body {
     max-width: 250px;
     height: auto;
     border-radius: 20px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
 
 .screenshot:hover {
     transform: translateY(-10px);
+}
+
+.phone-mockup {
+    width: 250px;
+    height: 500px;
+    background: #1e293b;
+    border-radius: 25px;
+    padding: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.phone-header {
+    height: 20px;
+    background: linear-gradient(90deg, #0891b2, #22d3ee);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.phone-content {
+    flex: 1;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    color: #1e293b;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+.phone-content .app-icon {
+    font-size: 3rem;
+    margin: 0 auto;
+}
+
+.phone-content h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0891b2;
+    margin: 0;
+}
+
+.phone-content p {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.feature-list span {
+    background: #f0f9ff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border-left: 3px solid #0891b2;
+    font-size: 0.8rem;
+    color: #1e293b;
+}
+
+.mood-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mood-options span {
+    font-size: 1.5rem;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mood-options span.active {
+    background: #10b981;
+    transform: scale(1.2);
+}
+
+.progress-bar {
+    background: #e5e7eb;
+    border-radius: 10px;
+    height: 8px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background: linear-gradient(90deg, #10b981, #22d3ee);
+    height: 100%;
+    width: 75%;
+    border-radius: 10px;
+}
+
+.session-card {
+    background: #f0f9ff;
+    border-radius: 10px;
+    padding: 15px;
+    border-left: 3px solid #0891b2;
+}
+
+.session-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.session-info strong {
+    font-size: 0.9rem;
+    color: #065f46;
+}
+
+.time {
+    background: #10b981;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 8px;
+    font-size: 0.7rem;
+}
+
+.join-btn {
+    background: #0891b2;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.join-btn:hover {
+    background: #10b981;
 }
 
 /* Contact Section */
@@ -533,6 +823,19 @@ body {
         justify-content: center;
     }
 
+    .phone-frame {
+        width: 250px;
+        height: 350px;
+    }
+
+    .phone-screen {
+        padding: 20px;
+    }
+
+    .phone-screen .app-icon {
+        font-size: 3rem;
+    }
+
     .about-content {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -556,6 +859,11 @@ body {
     .app-screenshots {
         flex-direction: column;
         align-items: center;
+    }
+
+    .phone-mockup {
+        width: 200px;
+        height: 400px;
     }
 
     .section-title {
